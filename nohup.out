@@ -1,0 +1,78 @@
+Loading config
+Validating config
+MySQL root@127.0.0.1:3306 semaphore
+Tmp Path (projects home) /tmp/semaphore
+Semaphore undefined-00000000-
+Interface 
+Port :3000
+Server is running
+signal: interrupt
+Loading config
+Validating config
+MySQL root@127.0.0.1:3306 semaphore
+Tmp Path (projects home) /tmp/semaphore
+Semaphore undefined-00000000-
+Interface 
+Port :3000
+Server is running
+signal: interrupt
+Loading config
+Validating config
+MySQL root@127.0.0.1:3306 semaphore
+Tmp Path (projects home) /tmp/semaphore
+Semaphore undefined-00000000-
+Interface 
+Port :3000
+Server is running
+time="2024-10-23T10:37:14+07:00" level=error msg="sql: no rows in result set"
+goroutine 54 [running]:
+runtime/debug.Stack()
+	/usr/local/go/src/runtime/debug/stack.go:26 +0x5e
+runtime/debug.PrintStack()
+	/usr/local/go/src/runtime/debug/stack.go:18 +0x13
+github.com/ansible-semaphore/semaphore/api/helpers.WriteError({0xe0b288, 0xc0001941c0}, {0xe04b20, 0x1300490})
+	/home/ndd2102/semaphore/api/helpers/helpers.go:121 +0x212
+github.com/ansible-semaphore/semaphore/api/projects.ProjectMiddleware.func1({0xe0b288, 0xc0001941c0}, 0xc00014c3c0)
+	/home/ndd2102/semaphore/api/projects/project.go:37 +0x393
+net/http.HandlerFunc.ServeHTTP(0xe0b288?, {0xe0b288?, 0xc0001941c0?}, 0x0?)
+	/usr/local/go/src/net/http/server.go:2220 +0x29
+github.com/ansible-semaphore/semaphore/api.authentication.func1({0xe0b288, 0xc0001941c0}, 0xc00014c3c0)
+	/home/ndd2102/semaphore/api/auth.go:102 +0x57
+net/http.HandlerFunc.ServeHTTP(0xc62a60?, {0xe0b288?, 0xc0001941c0?}, 0xc?)
+	/usr/local/go/src/net/http/server.go:2220 +0x29
+github.com/ansible-semaphore/semaphore/api.JSONMiddleware.func1({0xe0b288, 0xc0001941c0}, 0xc00014c3c0)
+	/home/ndd2102/semaphore/api/router.go:44 +0xf6
+net/http.HandlerFunc.ServeHTTP(0xba9d00?, {0xe0b288?, 0xc0001941c0?}, 0x7cd82c?)
+	/usr/local/go/src/net/http/server.go:2220 +0x29
+github.com/ansible-semaphore/semaphore/api.StoreMiddleware.func1.1()
+	/home/ndd2102/semaphore/api/router.go:35 +0x28
+github.com/ansible-semaphore/semaphore/db.StoreSession({0xe1ba00, 0xc00007e758}, {0xc0001f26b0, 0xc}, 0xc0004df7e0)
+	/home/ndd2102/semaphore/db/Store.go:471 +0x5f
+github.com/ansible-semaphore/semaphore/api.StoreMiddleware.func1({0xe0b288, 0xc0001941c0}, 0xc00014c3c0)
+	/home/ndd2102/semaphore/api/router.go:34 +0x114
+net/http.HandlerFunc.ServeHTTP(0xc00014c3c0?, {0xe0b288?, 0xc0001941c0?}, 0xc6d960?)
+	/usr/local/go/src/net/http/server.go:2220 +0x29
+github.com/ansible-semaphore/semaphore/cli/cmd.runService.func1.1({0xe0b288, 0xc0001941c0}, 0xc00014c3c0)
+	/home/ndd2102/semaphore/cli/cmd/root.go:74 +0xea
+net/http.HandlerFunc.ServeHTTP(0x0?, {0xe0b288?, 0xc0001941c0?}, 0x412205?)
+	/usr/local/go/src/net/http/server.go:2220 +0x29
+github.com/ansible-semaphore/semaphore/api.Route.CORSMethodMiddleware.func1.1({0xe0b288, 0xc0001941c0}, 0xc00014c3c0)
+	/home/ndd2102/semaphore/vendor/github.com/gorilla/mux/middleware.go:51 +0x89
+net/http.HandlerFunc.ServeHTTP(0xc00014c140?, {0xe0b288?, 0xc0001941c0?}, 0xb?)
+	/usr/local/go/src/net/http/server.go:2220 +0x29
+github.com/gorilla/mux.(*Router).ServeHTTP(0xc0001600c0, {0xe0b288, 0xc0001941c0}, 0xc00014c000)
+	/home/ndd2102/semaphore/vendor/github.com/gorilla/mux/mux.go:212 +0x1e2
+github.com/ansible-semaphore/semaphore/cli/cmd.runService.ProxyHeaders.func2({0xe0b288, 0xc0001941c0}, 0xc00014c000)
+	/home/ndd2102/semaphore/vendor/github.com/gorilla/handlers/proxy_headers.go:59 +0x143
+net/http.HandlerFunc.ServeHTTP(0xc00041c215?, {0xe0b288?, 0xc0001941c0?}, 0x1?)
+	/usr/local/go/src/net/http/server.go:2220 +0x29
+github.com/ansible-semaphore/semaphore/cli/cmd.runService.cropTrailingSlashMiddleware.func3({0xe0b288, 0xc0001941c0}, 0xc00014c000)
+	/home/ndd2102/semaphore/cli/cmd/server.go:27 +0xbd
+net/http.HandlerFunc.ServeHTTP(0x412205?, {0xe0b288?, 0xc0001941c0?}, 0xc000194101?)
+	/usr/local/go/src/net/http/server.go:2220 +0x29
+net/http.serverHandler.ServeHTTP({0xe081b0?}, {0xe0b288?, 0xc0001941c0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3210 +0x8e
+net/http.(*conn).serve(0xc000518000, {0xe0d190, 0xc000596e40})
+	/usr/local/go/src/net/http/server.go:2092 +0x5d0
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3360 +0x485
