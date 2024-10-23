@@ -288,6 +288,20 @@
 
         <v-list-item
           v-if="project.type === ''"
+          key="minioconfigs"
+          :to="`/project/${projectId}/minioconfigs`"
+        >
+          <v-list-item-icon>
+            <v-icon>mdi-git</v-icon>
+          </v-list-item-icon>
+
+          <v-list-item-content>
+            <v-list-item-title>Minio</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+
+        <v-list-item
+          v-if="project.type === ''"
           key="integrations"
           :to="`/project/${projectId}/integrations`"
         >
